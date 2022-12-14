@@ -1,0 +1,52 @@
+body{
+    background: #45badd;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url("https://waynemacmavis.github.io/joke-teller/robot.gif");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+#btn{
+    height: 50px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: palevioletred;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    filter: brightness(95%);
+}
+button:active{
+    transform: scale(0.9);
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+button:disabled{
+    filter: brightness(30%);
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width:1000px){
+    .container{
+        background-size: cover;
+        background-position: center center;
+ 
+    }
+   #btn{
+    position: absolute;
+     left: 40%;
+     top: 55%;
+  }
+}
